@@ -4,6 +4,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
+import { Link } from 'react-router-dom';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import Divider from '@material-ui/core/Divider';
@@ -59,7 +60,7 @@ class Menu extends React.Component {
         <Divider />
         <List>
           <div>
-            <ListItem button>
+            <ListItem button component={Link} to="/">
               <ListItemIcon>
                 <HomeIcon />
               </ListItemIcon>
@@ -67,7 +68,7 @@ class Menu extends React.Component {
             </ListItem>
           </div>
           <div>
-            <ListItem button>
+            <ListItem button component={Link} to="/show_cards">
               <ListItemIcon>
                 <GiftCardIcon />
               </ListItemIcon>
@@ -91,7 +92,7 @@ class Menu extends React.Component {
             </ListItem>
           </div>
           <div>
-            <ListItem button>
+            <ListItem button component={Link} to="/settings">
               <ListItemIcon>
                 <SettingsIcon />
               </ListItemIcon>
