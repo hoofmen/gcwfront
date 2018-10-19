@@ -35,7 +35,7 @@ function MenuHeader(props) {
       <div className={classes.row}>
         <Avatar
           alt={user.username}
-          src={user.img}
+          src={require('../img/' + user.img)}
           className={classes.avatar}
         />
       </div>

@@ -37,7 +37,7 @@ class Menu extends React.Component {
       this.setState({
             user: {
               username: 'johndoe',
-              img: './static/img/user.png',
+              img: 'user.png',
               details: {
                 name: 'John',
                 lastname: 'Doe',

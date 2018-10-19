@@ -5,17 +5,17 @@ import CardMedia from '@material-ui/core/CardMedia'
 import Typography from '@material-ui/core/Typography'
 
 const GCard = (props) => {
-  return (
+  return (    
     <div>
-      {props.card ? (
+      {props.card ? (        
         <Card style={{ maxWidth: 345 }}>          
             <CardMedia style={{ height: 140 }}
               title={props.card.store.name}
-              image={props.card.store.img}
+            image={require('../img/' + props.card.store.img)}
             />
             <CardContent>
               <Typography gutterBottom variant="headline" component="h2" align="left">
-                {props.card.value}
+                ${props.card.value}
               </Typography>
               <Typography component="p">
                 {props.card.store.name}
